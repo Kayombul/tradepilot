@@ -49,4 +49,4 @@ Local Git history preserves source code only. Create a private GitHub repository
 
 Source: https://github.com/Kayombul/tradepilot . GitHub Actions tests and builds the static export, then publishes to GitHub Pages. No broker passwords or journal records belong in this repository. Browser-local records remain private to that browser, even though application code is public.
 
-`npm run dev -- --port 3010` starts the local preview. With `output: export`, production is served from `out/` using a static web server; `next start` does not serve static exports. GitHub builds use `/tradepilot` as the base path.
+`npm run dev -- --port 3010` starts the local preview. With `output: export`, production is served from `out/` using a static web server; `npm start` serves the static export on port 3011. GitHub builds use `/tradepilot` as the base path.
